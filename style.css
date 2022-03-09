@@ -197,7 +197,20 @@ li{
     background: #EB3F21;
     opacity: 0.2;
     filter: blur(50px);  
+    animation: move-iner 10s ease-in-out infinite;
+    animation-direction: alternate-reverse;
   }
+  @keyframes move-iner {
+    0%{
+      bottom: 0%;
+    }
+    50%{
+      right: 0%;
+    }
+    100%{
+      bottom: 100%;
+    }
+}
   .right-big-blur{
     position: absolute;
     bottom: -20%;
@@ -207,6 +220,19 @@ li{
     background: #EB3F21;
     opacity: 0.32;
     filter: blur(50px);
+    animation: move-inner 20s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+  }
+  @keyframes move-inner {
+      0%{
+        bottom: 50%;
+      }
+      50%{
+        right: 70%;
+      }
+      100%{
+        bottom: 0%;
+      }
   }
 
   .top-left-blur{
@@ -301,13 +327,38 @@ li{
     transform: translateY(-15px);
 }
 
+body[data-aos-easing=ease] [data-aos] {
+  transition-timing-function: ease;
+}
+body[data-aos-duration="1000"] [data-aos] {
+  transition-duration: 1s;
+}
+body[data-aos-duration="400"] [data-aos] {
+  transition-duration: 1s;
+}
+[data-aos=mask].aos-animate {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+[data-aos=mask] {
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  transition-property: clip-path, transform;
+}
 
 /* ================= FORM ===================== */
+.w-70{
+  width: 70%;
+}
+
+.next-btn{
+  padding: 17px 20px;
+  width: 130px;
+  line-height: 1.2;
+}
+
 .button-group-pills .btn {
+  border-radius: 0px;
   width: 240px;
   line-height: 1.2;
-  margin-bottom: 15px;
-  margin-left: 10px;
   border-color: #fff;
   background-color: #000;
   color: #fff;
@@ -335,6 +386,18 @@ input {
   border-right: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
+.relative{
+  position: relative;
+}
+
+.light-style{
+  position:absolute;
+  top: -3%;
+  width: 100%;
+  height: 20px;
+  background-color: rgb(235, 63, 33,0.3);
+}
+
 .style{
   position:absolute;
   top: -3%;
@@ -408,6 +471,15 @@ input.invalid {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .light-style{
+    position:absolute;
+    top: -2%;
+  }
+  .style{
+    position:absolute;
+    top: -2%;
+  }
+  
   .bottom-right-blur{
     position: absolute;
     bottom: 5%;
