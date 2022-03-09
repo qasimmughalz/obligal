@@ -169,7 +169,7 @@ li{
    
   }
 
-  .fa-arrow-down{
+  .circle-move{
       animation: animate 1s ease-in-out infinite;
       animation-direction: alternate-reverse;
   }
