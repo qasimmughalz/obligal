@@ -275,8 +275,7 @@ li{
    /* ====================== SECOND SECTION ======================= */
 
    .clients img{
-       height: 150px;
-      
+       height: 150px; 
    }
 
    .my-card{
@@ -465,7 +464,107 @@ input.invalid {
 } 
 
 
+.circle-style{
+  position: relative;
+  padding-top: 60px;
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-color: #000; 
+}
 
+.circle-load{
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  background-color: #EB3F21;
+  height: 20px;
+  width: 280px;
+  border-radius: 10px;
+  transform: rotate(20deg);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper img{
+  height: 150px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+/* ============= tEAM ================ */
+.top-left-blur-team{
+  position: absolute;
+  top: 90%;
+  left: -20%;
+  height: 240px;
+  width: 240px;
+  background: #EB3F21;
+  opacity: 0.32;
+  filter: blur(50px);
+}
+
+.team{
+  position: relative;
+  height: 600px;
+  width:100%;
+  overflow: hidden;
+}
+.team-img{
+  position: absolute;
+  bottom: 0;
+  right: -10%;
+  height: 400px;
+}
+
+.team1{
+  background: transparent linear-gradient(138deg, #BD68D3 0%, #ECA3FF 100%) 0% 0% no-repeat padding-box;
+}
+
+.team2{
+  background: transparent linear-gradient(136deg, #64B176 0%, #65B277 0%, #D0E8D2 100%) 0% 0% no-repeat padding-box;
+}
+
+.team3{
+  background: transparent linear-gradient(317deg, #FFEC50 0%, #FF645A 100%) 0% 0% no-repeat padding-box;
+}
+
+.team4{
+  background: transparent linear-gradient(134deg, #569FD5 0%, #F2AFFF 100%) 0% 0% no-repeat padding-box;}
+
+.team5{
+  background: transparent linear-gradient(132deg, #5DB6F0 0%, #D6EFFF 100%) 0% 0% no-repeat padding-box;
+}
 
 
 
