@@ -32,6 +32,9 @@ body{
 }
 
   /* =============== GENERAL ================== */
+  .display-1{
+    font-size: 7em;
+  }
 .space-90{
     height: 90px;
 }
@@ -215,8 +218,20 @@ li{
     position: absolute;
     bottom: -20%;
     right: -5%;
-    height: 140px;
-    width: 140px;
+    height: 180px;
+    width: 180px;
+    background: #EB3F21;
+    opacity: 0.32;
+    filter: blur(50px);
+    animation: move-inner 20s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+  }
+  .right-big-blur-portfolio{
+    position: absolute;
+    bottom: 50%;
+    right: 30%;
+    height: 200px;
+    width: 200px;
     background: #EB3F21;
     opacity: 0.32;
     filter: blur(50px);
@@ -476,28 +491,64 @@ input.invalid {
 
 .circle-load{
   position: absolute;
-  top: -3px;
-  left: -3px;
+  
   background-color: #EB3F21;
-  height: 20px;
-  width: 280px;
+ 
+  stroke-width: 20px;
   border-radius: 10px;
   transform: rotate(20deg);
+}
+circle{
+  fill: none;
+  height: 290px !important;
+  width: 290px;
+  stroke: #EB3F21;
+  stroke-width: 20px;
+  stroke-dasharray: 590;
+  stroke-dashoffset: 521;
+  transition: 1s ease-in-out all;
+  animation-direction: alternate-reverse;
+  animation: progressBar 1s ease-in-out infinite;
+}
+
+@keyframes progressBar {
+  0%{
+    stroke-dasharray: 590;
+    stroke-dashoffset: 521;
+  }
+  50%{
+    stroke-dasharray: 442;
+    stroke-dashoffset: 228;
+  }
+  100%{
+    stroke-dasharray: 900;
+    stroke-dashoffset: 0;
+  }
+}
+
+
+svg{
+  height: 350px !important;
+  width: 350px;
+  position: absolute;
+  top: -15px;
+  left: -13px;
 }
 
 .swiper {
   width: 100%;
   height: 100%;
 }
-.swiper img{
+.swiper-slide{
+  margin-right: 0px !important;
+}
+.swiper-slide img{
   height: 150px;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
-
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -516,7 +567,6 @@ input.invalid {
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -532,6 +582,17 @@ input.invalid {
   background: #EB3F21;
   opacity: 0.32;
   filter: blur(50px);
+}
+
+.portfolio-left-blur{
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  height: 440px;
+  width: 440px;
+  background: #EB3F21;
+  opacity: 0.32;
+  filter: blur(80px);
 }
 
 .team{
@@ -570,6 +631,9 @@ input.invalid {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .display-1{
+    font-size: 4em;
+  }
   .light-style{
     position:absolute;
     top: -2%;
