@@ -491,6 +491,9 @@ input.invalid {
 } 
 
 
+
+
+
 .circle-style{
   position: relative;
   padding-top: 60px;
@@ -512,7 +515,11 @@ input.invalid {
 }
 
 .mylinks{
-  z-index: 500;
+  z-index:4;
+}
+
+.form-button{
+  width: 240px;
 }
 circle{
   fill: none;
