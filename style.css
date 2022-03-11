@@ -13,8 +13,15 @@
     src: url('fonts/Mont/Mont-Book.otf');
 }
 @font-face {
+  font-family: Mont-semiBold;
+  src: url('fonts/Mont/Mont-SemiBold.otf');
+}
+@font-face {
     font-family: Mont-regular;
     src: url('fonts/Mont/Mont-Regular.otf');
+}
+.mont-semiBold{
+  font-family: 'Mont-semiBold' !important;
 }
 .mont-bold{
     font-family: 'Mont-bold' !important;
@@ -29,6 +36,10 @@
 body{
     background-color: #000;
     color: #fff;
+  
+}
+p{
+  font-size: 18px !important;
 }
 
   /* =============== GENERAL ================== */
@@ -61,6 +72,7 @@ body{
     border-radius: 0px;
 }
 a{
+  
     text-decoration: none;
 }
 li{
@@ -494,7 +506,7 @@ input.invalid {
   
   background-color: #EB3F21;
  
-  stroke-width: 20px;
+  stroke-width: 10px;
   border-radius: 10px;
   transform: rotate(20deg);
 }
@@ -528,12 +540,18 @@ circle{
 
 
 svg{
-  height: 350px !important;
-  width: 350px;
+ 
   position: absolute;
   top: -15px;
   left: -13px;
 }
+
+.swiper-container {
+ 
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .swiper {
   width: 100%;
@@ -543,7 +561,7 @@ svg{
   margin-right: 0px !important;
 }
 .swiper-slide img{
-  height: 150px;
+  height: 120px;
 }
 
 .swiper-slide {
@@ -627,10 +645,68 @@ svg{
   background: transparent linear-gradient(132deg, #5DB6F0 0%, #D6EFFF 100%) 0% 0% no-repeat padding-box;
 }
 
+.fs-14{
+  font-size: 14px;
+}
+.fs-36{
+  font-size: 36px;
+}
+.fs-30{
+  font-size: 30px;
+}
+.fs-20{
+  font-size: 20px;
+}
+.fs-80{
+  font-size: 80px;
+}
+.fs-18px{
+  font-size: 18px;
+}
+
+.fs-24{
+  font-size: 24px;
+}
+
+.fs-60{
+  font-size: 60px;
+}
+
+.hover-orange:hover{
+  color: #EB3F21 !important;
+}
 
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .fs-14{
+    font-size: 14px;
+  }
+  .fs-36{
+    font-size: 26px;
+  }
+  .fs-30{
+    font-size: 30px;
+  }
+  .fs-20{
+    font-size: 20px;
+  }
+  
+  .fs-18px{
+    font-size: 18px;
+  }
+  
+  .fs-24{
+    font-size: 21px;
+  }
+  
+  .fs-60{
+    font-size: 30px;
+  }
+  
+  .fs-80{
+    font-size: 45px;
+  }
   .display-1{
     font-size: 4em;
   }

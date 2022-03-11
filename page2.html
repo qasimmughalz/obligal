@@ -61,7 +61,11 @@
     <div class="container section-two my-5 ps-md-5 what-we-do px-4" 
 >
 
-        <h1 class="display-3 fw-bold text-center mont-book my-4">We’re a Digital Agency That’s been around since 2019</h1>
+        <h1 class="display-3 fw-bold text-center mont-book my-4" data-aos-delay="50"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true">We’re a Digital Agency That’s been around since 2019</h1>
+
         <div class="mt-md-4 px-3">
             <div class="row  justify-content-center">
                 <div class="col-md-6  my-card p-4">
@@ -69,7 +73,7 @@
                         <div class="col-md-3 d-flex align-items-center ">
                             <img src="img/arrow.svg" class="img-fluid my-3" alt="" data-aos="zoom-in"
                             data-aos-anchor-placement="top-bottom" data-aos-delay="50"
-                            data-aos-duration="500"
+                            data-aos-duration="1000"
                             data-aos-easing="ease-in-out"
                             data-aos-mirror="true">
                         </div>
@@ -324,7 +328,7 @@
         function rotatemenu() {
             let t1 = gsap.timeline()
             t1
-                .from('.rotate-right-bottom', { opacity: 0.1, duration: 0.2, stagger: 0.3 })
+                .from('.rotate-right-bottom', { opacity: 0.1, duration: 0.2, stagger: 1 })
         }
 
         navabr.addEventListener('click', () => {
