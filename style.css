@@ -510,6 +510,10 @@ input.invalid {
   border-radius: 10px;
   transform: rotate(20deg);
 }
+
+.mylinks{
+  z-index: 500;
+}
 circle{
   fill: none;
   height: 290px !important;
@@ -523,20 +527,20 @@ circle{
   animation: progressBar 1s ease-in-out infinite;
 }
 
-@keyframes progressBar {
+/* @keyframes progressBar {
   0%{
     stroke-dasharray: 590;
     stroke-dashoffset: 521;
   }
   50%{
-    stroke-dasharray: 442;
+    stroke-dasharray: 442, 1;
     stroke-dashoffset: 228;
   }
   100%{
     stroke-dasharray: 900;
     stroke-dashoffset: 0;
   }
-}
+} */
 
 
 svg{
@@ -643,6 +647,10 @@ svg{
 
 .team5{
   background: transparent linear-gradient(132deg, #5DB6F0 0%, #D6EFFF 100%) 0% 0% no-repeat padding-box;
+}
+
+.fs-42{
+  font-size: 42px;
 }
 
 .fs-14{
