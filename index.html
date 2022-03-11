@@ -99,7 +99,11 @@
     <div class="container section-two my-5 ps-md-5 what-we-do px-4" 
 >
 
-        <h1 class="fs-80 mont-bold">What We <span class="text-orange">Do?</span> </h1>
+        <h1 class="fs-80 mont-bold" data-aos="fade-left"
+        data-aos-delay="800"
+       data-aos-duration="800"
+       data-aos-easing="ease-in-out"
+     >What We <span class="text-orange">Do?</span> </h1>
         <div class="mt-md-4 px-3">
             <div class="row  justify-content-center" style="overflow: hidden;">
                 <div class="col-md-6  my-card p-4">
@@ -213,11 +217,11 @@
     <div class="container my-5 ps-5 ">
         <div class="row justify-content-between">
             <div class="col-md-7">
-                <h1 class="fs-60 fw-normal mont-book"  data-aos="fade-up"
+                <h1 class="fs-60 fw-normal mont-book custom-line-height"   data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom" data-aos-delay="100"
                 data-aos-duration="500"
                 data-aos-easing="ease-in-out"
-                data-aos-mirror="true" style="line-height: 57px;">Using Our<br> Experience<br> To
+                data-aos-mirror="true" >Using Our<br> Experience<br> To
                     Make Your<br> Digital Experience <br>Brighter</h1>
                 <div class="mt-4 d-flex"  data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom" data-aos-delay="100"
@@ -234,7 +238,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="300px" height="300">
                         <circle cx="150" cy="150" r="140" stroke-linecap="round" />
                      </svg>
-                        <h4 class="">  What we  <span class="text-orange">Done</span>  </h4> 
+                        <h4 class="" >  What we  <span class="text-orange">Done</span>  </h4> 
                         <h1 class=" display-4 fw-bold mont-bold">200</h1>
                         <h3 class="">Projects</h3>
                         
@@ -530,7 +534,9 @@
         var swiper = new Swiper(".mySwiper", {
         slidesPerView: 2,
         spaceBetween: 10,
+        speed: 1000,
         loop: true,
+        delay: 2000,
         autoplay:true,
         pagination: {
           el: ".swiper-pagination",
@@ -540,22 +546,24 @@
         breakpoints: {
           640: {
             slidesPerView: 3,
-            spaceBetween: 40,
+            spaceBetween: 10,
           },
           768: {
             slidesPerView: 4,
-            spaceBetween: 40,
+            spaceBetween: 10,
           },
           1024: {
             slidesPerView: 5,
-            spaceBetween: 40,
+            spaceBetween: 10,
           },
         },
       });
     </script>
 
     <script>
-        AOS.init();
+                AOS.init({
+        once: true
+        });
     </script>
 
 

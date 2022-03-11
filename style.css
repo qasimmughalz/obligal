@@ -517,6 +517,15 @@ input.invalid {
 .mylinks{
   z-index:4;
 }
+.form-control{
+  border: 1px solid #fff;
+}
+
+::placeholder{
+  padding-left: 20px;
+  padding-top: 15px;
+  font-size: 24px;
+}
 
 .form-button{
   width: 240px;
@@ -613,6 +622,10 @@ svg{
   filter: blur(50px);
 }
 
+.custom-line-height{
+  line-height: 57px;;
+}
+
 .portfolio-left-blur{
   position: absolute;
   top: -20%;
@@ -622,6 +635,7 @@ svg{
   background: #EB3F21;
   opacity: 0.32;
   filter: blur(80px);
+  z-index: -1;
 }
 
 .team{
@@ -694,6 +708,9 @@ svg{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .custom-line-height{
+    line-height: 30px;;
+  }
   .fs-14{
     font-size: 14px;
   }
