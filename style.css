@@ -494,25 +494,6 @@ input.invalid {
 
 
 
-.circle-style{
-  position: relative;
-  padding-top: 60px;
-    height: 280px;
-    width: 280px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    background-color: #000; 
-}
-
-.circle-load{
-  position: absolute;
-  
-  background-color: #EB3F21;
- 
-  stroke-width: 10px;
-  border-radius: 10px;
-  transform: rotate(20deg);
-}
 
 .mylinks{
   z-index:4;
@@ -559,12 +540,6 @@ circle{
 } */
 
 
-svg{
- 
-  position: absolute;
-  top: -15px;
-  left: -13px;
-}
 
 .swiper-container {
  
@@ -703,6 +678,34 @@ svg{
 
 .hover-orange:hover{
   color: #EB3F21 !important;
+}
+
+
+.circle-style{
+  padding-top: 90px;
+  height: 340px;
+  width: 340px;
+  background-image: url(img/circle15.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: 0.4s ease-in-out;
+  animation: changeimage 2s ease-in infinite;
+}
+
+@keyframes changeimage{
+  0%{
+    background-image: url(img/circle15.svg);
+  }
+  50%{
+    background-image: url(img/circle50.svg);
+  }
+  75%{
+    background-image: url(img/circle75.svg);
+  }
+  100%{
+    background-image: url(img/circle100.svg);
+  }
 }
 
 
