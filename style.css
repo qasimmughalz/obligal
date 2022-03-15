@@ -760,6 +760,9 @@ circle{
 /* Extra small devices (phones, 600px and down) */
   
 @media only screen and (max-width: 600px) {
+  .gif-image{
+    height: 300px;
+  }
   .swiper-slide img{
     height: 80px;
   }
