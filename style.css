@@ -406,31 +406,36 @@ input {
 
 
 .font-change:before{
-  content: '200';
-  animation: font-change 3s ease-in-out infinite;
+  content: '';
+  animation: font-change 9s ease-in-out infinite;
   animation-timing-function: linear;
 }
 @keyframes font-change {
   0%{
     content: '400';
+    animation-delay: 2s;
   }
   25%{
     content: '500';
+    animation-delay: 2s;
   }
   50%{
-    content: '500';
+    content: '600';
+    animation-delay: 2s;
   }
   75%{
-    content: '300';
+    content: '700';
+    animation-delay: 2s;
   }
   100%{
     content: '800';
+    animation-delay: 2s;
   }
 }
 
 .font-change-detail:before{
   content: 'Projects';
-  animation: content-change 3s ease-in-out infinite;
+  /* animation: content-change 3s ease-in-out infinite; */
   animation-timing-function: linear;
 }
 @keyframes content-change {
@@ -448,32 +453,14 @@ input {
   }
 }
 
-.circle-style{
-  padding-top: 90px;
-  height: 340px;
-  width: 340px;
-  background-image: url(img/circle15.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  transition: 0.4s ease-in-out;
-  animation: changeimage 3s ease-in infinite;
+
+.circle-data{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
-@keyframes changeimage{
-  0%{
-    background-image: url(img/circle15.svg);
-  }
-  50%{
-    background-image: url(img/circle50.svg);
-  }
-  75%{
-    background-image: url(img/circle75.svg);
-  }
-  100%{
-    background-image: url(img/circle100.svg);
-  }
-}
 
 
 
