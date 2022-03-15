@@ -100,7 +100,7 @@
 >
 
         <h1 class="fs-80 mont-bold" data-aos="fade-left"
-        data-aos-delay="800"
+        data-aos-delay="0"
        data-aos-duration="800"
        data-aos-easing="ease-in-out"
      >What We <span class="text-orange">Do?</span> </h1>
@@ -293,6 +293,61 @@
                   <div class="swiper-slide">
                     <div class="col-auto mt-3">
                             <img src="img/clients6.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-auto mt-3">
+                            <img src="img/clients5.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-auto mt-3">
+                            <img src="img/clients5.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-auto mt-3">
+                            <img src="img/clients5.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-auto mt-3">
+                            <img src="img/clients5.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-auto mt-3">
+                            <img src="img/clients5.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-auto mt-3">
+                            <img src="img/clients5.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-auto mt-3">
+                            <img src="img/clients5.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-auto mt-3">
+                            <img src="img/clients5.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-auto mt-3">
+                            <img src="img/clients5.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-auto mt-3">
+                            <img src="img/clients5.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="col-auto mt-3">
+                            <img src="img/clients5.png" class="img-fluid" alt="">
                     </div>
                   </div>
                   <div class="swiper-slide">
@@ -529,12 +584,26 @@
 
     <script>
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 10,
-        speed: 1000,
-        loop: true,
-        delay: 2000,
-        autoplay:true,
+        // slidesPerView: 3,
+        // spaceBetween: 10,
+        // direction: 'horizontal',
+        // speed: 1000,
+        // loop: true,
+        // loopedSlides: 1,
+        // shortSwipes: false,
+    // longSwipes: false,
+        // delay: 1000,
+        // autoplay:true,
+        direction: 'horizontal',
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+	  loop:true,
+	  spaceBetween: 30,
+      //visibilityFullFit: true,
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
        
         pagination: {
           el: ".swiper-pagination",
@@ -550,13 +619,12 @@
             spaceBetween: 40,
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 5,
             spaceBetween: 60,
           },
         },
       });
     </script>
-
     <script>
                 AOS.init({
         once: true
@@ -566,19 +634,17 @@
 
     <script>
         var navabr = document.querySelector('.circle-menu');
-
         var text = document.getElementById('menuText')
         var clicked = false;
         var menu = document.querySelector('.nav');
 
         let t2 = gsap.timeline()
-            t2.from('.small-menu', { opacity: 0, duration: 0.7, stagger: 0.2 })
+            t2.from('.small-menu', { opacity: 0, duration: 0.7, delay: 2, stagger: 0.2 })
 
         function rotatemenu() {
             let t1 = gsap.timeline()
             t1
                 .from('.rotate-right-bottom', { opacity: 0, duration: 0.7, stagger: 0.2 })
-                
         }
 
         navabr.addEventListener('click', () => {
@@ -590,7 +656,6 @@
                 text.style.color = '#000'
                 rotatemenu()
                 clicked = true;
-
             }
             else {
 
@@ -599,7 +664,6 @@
                 text.innerText = "OPEN MENU";
                 text.style.color = '#fff'
                 clicked = false;
-
             }
 
         })

@@ -846,6 +846,7 @@ circle{
     background: #EB3F21;
     opacity: 0.32;
     filter: blur(50px);
+    z-index: -1;
   }
 }
 
