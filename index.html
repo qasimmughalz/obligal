@@ -95,7 +95,7 @@
 
 
    
-    <div class="space-50" id="whatwedo"></div>
+    <div class="space-50 d-md-block d-none" id="whatwedo"></div>
     <div class="container section-two my-5 ps-md-5 what-we-do px-4" 
 >
 
@@ -106,7 +106,7 @@
      >What We <span class="text-orange">Do?</span> </h1>
         <div class="mt-md-4 px-3">
             <div class="row  justify-content-center" style="overflow: hidden;">
-                <div class="col-md-6  my-card p-4">
+                <div class="col-md-6  my-card p-md-4 p-3 ">
                     <div class="row align-items-center justify-content-around">
                         <div class="col-md-3 d-flex align-items-center ">
                             <img src="img/arrow.svg" class="img-fluid my-3" alt="" data-aos="zoom-in"
@@ -131,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6  my-card p-4">
+                <div class="col-md-6  my-card p-md-4 p-3">
                     <div class="row align-items-center justify-content-around">
                         <div class="col-md-3 d-flex align-items-center ">
                             <img src="img/speaker.svg" class="img-fluid my-3" data-aos="zoom-in"
@@ -213,10 +213,10 @@
     <!-- ========== Third Section =============== -->
 
     <div class="space-50 d-md-block d-none"></div>
-    <div class="space-50"></div>
-    <div class="container my-5 ps-5 ">
-        <div class="row justify-content-between">
-            <div class="col-md-7">
+    <div class="space-50 d-md-block d-none"></div>
+    <div class="container my-5 ps-md-5 ">
+        <div class="row justify-content-between ">
+            <div class="col-md-7  mt-5 ps-5 ps-md-3">
                 <h1 class="fs-60 fw-normal mont-book custom-line-height"   data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom" data-aos-delay="100"
                 data-aos-duration="500"
@@ -233,21 +233,17 @@
                 </div>
             </div>
           
-            <div class="col-md-5 text-center  ">
-
-
+            <div class="col-md-5 text-center  mt-3 ">
                 <div class="circle-style   text-white">
                         <h4 class="" >  What we  <span class="text-orange">Done</span>  </h4> 
-                        <h1 class=" display-4 fw-bold mont-bold" numbering="200"></h1>
-                        <h3 class="">Projects</h3>
-                        
+                        <h1 class=" display-4 fw-bold mont-bold  font-change " ></h1>
+                        <h3 class="font-change-detail"></h3>
                 </div>
-                
             </div>
         </div>
     </div>
 
-    <div class="space-90"></div>
+    <div class="space-90 d-none d-md-block"></div>
     
 
     <div class="container clients text-center " data-aos="fade-up"
@@ -269,7 +265,9 @@
       </div>     
 
 
-           <div class="col-md-9 m-auto">
+      <div class="container">
+
+           <div class="col-md-9 col-11 m-auto">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -306,7 +304,7 @@
               </div>
         </div>
 
-
+    </div>
 
     <div class="space-90" id="portfolio"></div>
     <div class="space-50 d-md-block d-none"></div>
@@ -348,7 +346,7 @@
 
             </div>
             <div class="col-md-6 order-1 order-md-2" >
-                <h1 class="fs-60 mont-book" style="line-height: 57px;" data-aos="fade-up"
+                <h1 class="fs-60 mont-book custom-line-height"  data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom" data-aos-delay="100"
                 data-aos-duration="500"
                 data-aos-easing="ease-in-out"
@@ -397,7 +395,7 @@
 
 
 
-    <div class="space-90"></div>
+    <div class="space-90 d-none d-md-block"></div>
 
     <div class="container my-5 px-4">
         <div class="col-md-8" data-aos="fade-up"
@@ -473,21 +471,24 @@
 
     <footer>
         <div class="container-fluid footer">
-            <div class="container">
-                <div class="row justify-content-between p-md-5 py-5">
-                    <div class="col-md-6 text-left mont-book">
+            <div class="container relative">
+            
+                <div class="row justify-content-between p-md-5 py-5 ">
+                  
+                    <div class="col-md-6 text-left mont-book relative">
+                        <div class="footer-blur"></div>
                         <h1 class="fs-60 fw-normal text-white mont-book" data-aos="fade-up"
                         data-aos-delay="200"
                        data-aos-duration="800"
                        data-aos-easing="ease-in-out"
                        data-aos-mirror="true">Have an<br> Awesome Idea?</h1>
                         <button class="btn btn-danger-white mt-2" data-aos="fade-up"
-                        data-aos-delay="500"
+                        data-aos-delay="300"
                        data-aos-duration="800"
                        data-aos-easing="ease-in-out"
                        data-aos-mirror="true"> <a href="form.html" class="text-white"> Tell us about it</a>   </button>
                         <p class="my-4 text-white" data-aos="fade-up"
-                        data-aos-delay="1000"
+                        data-aos-delay="500"
                        data-aos-duration="800"
                        data-aos-easing="ease-in-out"
                        data-aos-mirror="true">info@obligal.com</p>
@@ -528,7 +529,7 @@
 
     <script>
         var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
+        slidesPerView: 3,
         spaceBetween: 10,
         speed: 1000,
         loop: true,
@@ -549,7 +550,7 @@
             spaceBetween: 40,
           },
           1024: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 60,
           },
         },
@@ -565,6 +566,7 @@
 
     <script>
         var navabr = document.querySelector('.circle-menu');
+
         var text = document.getElementById('menuText')
         var clicked = false;
         var menu = document.querySelector('.nav');
@@ -582,7 +584,7 @@
         navabr.addEventListener('click', () => {
 
             if (!clicked) {
-                navabr.classList.add('open')
+                navabr.classList.add('open');
                 menu.classList.add('visible');
                 text.innerText = "CLOSE";
                 text.style.color = '#000'

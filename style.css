@@ -127,17 +127,20 @@ li{
   .line::after{
     transform: translateY(6px);
   }
-  
+   .open{
+    background-color: #fff;
+  }
+
   .open .line{
-    background-color: transparent;
+    background-color: #fff;
   }
   
   .open .line::before{
-  
+    background-color: #000;
     transform: rotate(45deg) 
   }
   .open .line::after{
-  
+    background-color: #000;
     transform: rotate(-45deg)
   }
 
@@ -156,6 +159,7 @@ li{
     z-index: 100;
   }
   
+
    .visible{
     clip-path: circle(100%);
     /* clip-path: circle(2000px at 100% -20px ); */
@@ -400,6 +404,79 @@ input {
   visibility:hidden;
 }
 
+
+.font-change:before{
+  content: '200';
+  animation: font-change 3s ease-in-out infinite;
+  animation-timing-function: linear;
+}
+@keyframes font-change {
+  0%{
+    content: '400';
+  }
+  25%{
+    content: '500';
+  }
+  50%{
+    content: '500';
+  }
+  75%{
+    content: '300';
+  }
+  100%{
+    content: '800';
+  }
+}
+
+.font-change-detail:before{
+  content: 'Projects';
+  animation: content-change 3s ease-in-out infinite;
+  animation-timing-function: linear;
+}
+@keyframes content-change {
+  0%{
+    content: 'Projects';
+  }
+  50%{
+    content: 'Websites';
+  }
+  75%{
+    content: 'SEO';
+  }
+  100%{
+    content: 'Deliveries';
+  }
+}
+
+.circle-style{
+  padding-top: 90px;
+  height: 340px;
+  width: 340px;
+  background-image: url(img/circle15.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: 0.4s ease-in-out;
+  animation: changeimage 3s ease-in infinite;
+}
+
+@keyframes changeimage{
+  0%{
+    background-image: url(img/circle15.svg);
+  }
+  50%{
+    background-image: url(img/circle50.svg);
+  }
+  75%{
+    background-image: url(img/circle75.svg);
+  }
+  100%{
+    background-image: url(img/circle100.svg);
+  }
+}
+
+
+
 .button-group-pills .btn:hover {
   border-color: #EB3F21;
   background-color: #EB3F21;
@@ -413,7 +490,7 @@ input {
   border-bottom: 1px solid #fff;
 }
 .relative{
-  position: relative;
+  position: relative !important;
 }
 
 .light-style{
@@ -555,9 +632,7 @@ circle{
 .swiper-slide{
   margin-right: 0px !important;
 }
-.swiper-slide img{
-  height: 120px;
-}
+
 
 .swiper-slide {
   text-align: center;
@@ -578,6 +653,7 @@ circle{
 }
 
 .swiper-slide img {
+  height: 120px;
   display: block;
   width: 100%;
   object-fit: cover;
@@ -680,37 +756,32 @@ circle{
   color: #EB3F21 !important;
 }
 
-
-.circle-style{
-  padding-top: 90px;
-  height: 340px;
-  width: 340px;
-  background-image: url(img/circle15.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  transition: 0.4s ease-in-out;
-  animation: changeimage 2s ease-in infinite;
+.footer-blur{
+  position: absolute !important;
+  height: 140px;
+  width: 140px;
+  top: 4%;
+  left: 5%;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.32;
+  filter: blur(50px);
 }
 
-@keyframes changeimage{
-  0%{
-    background-image: url(img/circle15.svg);
-  }
-  50%{
-    background-image: url(img/circle50.svg);
-  }
-  75%{
-    background-image: url(img/circle75.svg);
-  }
-  100%{
-    background-image: url(img/circle100.svg);
-  }
-}
 
 
 /* Extra small devices (phones, 600px and down) */
+  
 @media only screen and (max-width: 600px) {
+  .swiper-slide img{
+    height: 80px;
+  }
+  .circle-style{
+    padding-top: 120px;
+
+    background-size: 80% 80%;
+    
+  }
   .custom-line-height{
     line-height: 30px;;
   }
@@ -764,6 +835,8 @@ circle{
     box-shadow: 0px 0px 250px 50px #EB3F21;
     background-color: #EB3F21;
   }
+
+ 
   .right-big-blur{
     position: absolute;
     bottom: 0%;
