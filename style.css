@@ -786,7 +786,7 @@ circle{
   
 @media only screen and (max-width: 600px) {
   .button-group-pills .btn{
-    width: auto !important;
+    width: 150px !important;
   }
   .form-button{
     width: 120px !important;
