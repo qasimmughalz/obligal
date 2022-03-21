@@ -780,13 +780,19 @@ circle{
   
 }
 
+.padding-12{
+  padding-left: 12px;
+}
 
 
 /* Extra small devices (phones, 600px and down) */
   
 @media only screen and (max-width: 600px) {
+  .padding-12{
+    padding-left: 0px;
+  }
   .button-group-pills .btn{
-    width: 150px !important;
+    width: 100px !important;
   }
   .form-button{
     width: 120px !important;
